@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springboot.demo.mapper.UserMapper">
+	<!--<resultMap id="BaseResultMap" type="com.jhh.jhs.loan.entity.app.Person">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="username" property="username" jdbcType="VARCHAR" />
+		<result column="password" property="password" jdbcType="VARCHAR" />
+		<result column="phone" property="phone" jdbcType="VARCHAR" />
+		<result column="check_date" property="checkDate" jdbcType="DATE" />
+		<result column="phone_business" property="phoneBusiness" jdbcType="VARCHAR" />
+		<result column="phone_service" property="phoneService" jdbcType="VARCHAR" />
+		<result column="grade" property="grade" jdbcType="INTEGER" />
+		<result column="is_login" property="isLogin" jdbcType="INTEGER" />
+		<result column="token_id" property="tokenId" jdbcType="VARCHAR" />
+		<result column="source" property="source" jdbcType="VARCHAR" />
+		<result column="inviter" property="inviter" jdbcType="INTEGER" />
+		<result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+		<result column="update_date" property="updateDate" jdbcType="TIMESTAMP" />
+		<result column="sync" property="sync" jdbcType="CHAR" />
+		<result column="is_manual" property="isManual" jdbcType="VARCHAR" />
+		<result column="description" property="description" jdbcType="VARCHAR" />
+		<result column="card_num" property="cardNum" jdbcType="VARCHAR" />
+		<result column="name" property="name" jdbcType="VARCHAR" />
+		<result column="sex" property="sex" jdbcType="VARCHAR" />
+		<result column="nation" property="nation" jdbcType="VARCHAR" />
+		<result column="birthday" property="birthday" jdbcType="DATE" />
+		<result column="address" property="address" jdbcType="VARCHAR" />
+		<result column="office" property="office" jdbcType="VARCHAR" />
+		<result column="start_date" property="startDate" jdbcType="DATE" />
+		<result column="end_date" property="endDate" jdbcType="DATE" />
+		<result column="card_photoz" property="cardPhotoz" jdbcType="VARCHAR" />
+		<result column="card_photof" property="cardPhotof" jdbcType="VARCHAR" />
+		<result column="card_photod" property="cardPhotod" jdbcType="VARCHAR" />
+		<result column="card_photov" property="cardPhotov" jdbcType="VARCHAR" />
+		<result column="bank_name" property="bankName" jdbcType="VARCHAR" />
+		<result column="bank_card" property="bankCard" jdbcType="VARCHAR" />
+		<result column="contact_url" property="contactUrl" jdbcType="VARCHAR" />
+		<result column="contact_num" property="contactNum" jdbcType="INTEGER" />
+		<result column="contact_date" property="contactDate" jdbcType="DATE" />
+		<result column="balance" property="balance" jdbcType="DECIMAL" />
+		<result column="device" property="device" jdbcType="VARCHAR" />
+	</resultMap>-->
+	<select id="getName" resultType="java.lang.String" parameterType="java.lang.Integer">
+		SELECT name from person WHERE id = #{id}
+	</select>
+
+</mapper>

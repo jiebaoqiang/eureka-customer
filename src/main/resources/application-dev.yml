@@ -1,0 +1,15 @@
+server:
+  port: 8888
+book:
+  name: aasassa
+management:
+  security:
+    enabled: false
+spring:
+  application:
+    name: demo1
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+

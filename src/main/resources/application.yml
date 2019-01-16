@@ -1,0 +1,38 @@
+spring:
+  datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        username: JFS_DEV
+        password: deshine
+        url: jdbc:mysql://192.168.1.117:3306/jhs_loan?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+  profiles:
+    active: dev
+  application:
+    name: name=demo1
+  redis:
+    cluster:
+      nodes: 192.168.1.95:7001,192.168.1.95:7002,192.168.1.95:7003,192.168.1.95:7004,192.168.1.95:7005,192.168.1.95:7006
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+    timeout: 0
+    password: abc123#
+    commandTimeout: 5000
+
+book:
+  name: asas
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:llll/eureka/
+
+mybatis:
+  mapper-locations: classpath*:mapper/**/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+
